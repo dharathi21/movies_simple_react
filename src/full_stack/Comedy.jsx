@@ -4,17 +4,16 @@ import comedies from './ComedyList'
 function Comedy() {
   return (
     <div>{
-      comedies.map((comedy,index)=>{
+      comedies.map((comedy,index)=>(
         <p key={index}>
-            <p>{comedy.url}</p>
+            <img src={comedy.url}></img>
             <p>{comedy.name}</p>
             <p>{comedy.Director}</p>
             <p>{comedy.releasedate}</p>  
         </p>
 
-      })}
-    </div>
-  )
+      ))}
+    </div>  )
 }
 
 export default Comedy
