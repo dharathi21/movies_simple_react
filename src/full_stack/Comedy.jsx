@@ -5,7 +5,7 @@ function Comedy() {
   return (
     <div>{
       comedies.map((comedy,index)=>(
-        <p key={index}>
+        <p className="box" key={index}>
             <img src={comedy.url}></img>
             <p>{comedy.name}</p>
             <p>{comedy.Director}</p>
